@@ -43,6 +43,9 @@
     display: flex;
     justify-content: space-between;
 }
+.Socials > svg {
+    cursor: pointer;
+}
 
 .BottomHeader {
     display: flex;
@@ -112,6 +115,7 @@
 .animate {
     animation: grow 0.4s ease forwards;
 }
+
 @keyframes grow {
     from {
         width: 0%;

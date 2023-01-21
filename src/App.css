@@ -1,8 +1,8 @@
 .App {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  margin: auto;
+  width: 100%;
+  margin: 0;
   align-items: center;
 }
 .AppContents{

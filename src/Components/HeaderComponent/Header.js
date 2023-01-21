@@ -47,19 +47,19 @@ export default function Header() {
         </div>
 
         <div className='Nav'>
-          <Link style={{textDecoration: 'none'}} to={'/'}>
+          <Link className='NavLink' style={{textDecoration: 'none'}} to={'/'}>
             <div className='NavContent'>
               <span>Home</span>
               <div className={`underline ${currentLocation === '/' ? 'animate' : ''}`}></div>
             </div>
           </Link>
-          <Link style={{textDecoration: 'none'}} to ={'About'}>
+          <Link className='NavLink' style={{textDecoration: 'none'}} to ={'About'}>
               <div className='NavContent'>
                 <span>About</span>
                 <div className={`underline ${currentLocation === '/About' ? 'animate' : ''}`}></div>
               </div>
           </Link>
-         <Link style={{textDecoration: 'none'}} to ={'Contact'}>
+         <Link className='NavLink' style={{textDecoration: 'none'}} to ={'Contact'}>
             <div className='NavContent'>
               <span>Contact Us</span>
               <div className={`underline ${currentLocation === '/Contact' ? 'animate' : ''}`}></div>

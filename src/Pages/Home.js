@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import BackgroundImage1 from  '../Assets/BackgroundImage1.png'
 import HeroSectionImage from '../Assets/HeroSectionImage.jpg'
+import HeroSectionImage2 from '../Assets/HeroSectionImage2.jpg'
 import { Link } from "react-router-dom";
 import Section2 from '../Components/Home/Section2/Section2'
 import Section3 from '../Components/Home/Section3/Section3';
@@ -42,13 +43,14 @@ export default function Home() {
               <div></div>
             </div>
             <div className='Block-effect'></div>
-            <img src={HeroSectionImage} alt="HeroSectionImage"/>
+              <img className='HeroSection-SecondImage' src={HeroSectionImage2} alt ="HerSectionImage2" />
+             <img className='HeroSection-FirstImage' src={HeroSectionImage} alt="HeroSectionImage"/>
           </div>
         </div>
         
         <Section2/>
         <Section3/>
-        
+
     </div>
   )
 }

@@ -144,7 +144,7 @@
     opacity: 1;
   }
 }
-.HeroSection-Right > img  {
+.HeroSection-FirstImage  {
   position: absolute;
   width: 400px;
   margin-top: 60px;
@@ -152,6 +152,30 @@
   border: 1px solid #FAD100;
 }
 
+.HeroSection-SecondImage {
+  position: absolute;
+  height: fit-content;
+  width: 150px;
+  margin-top: 15px;
+  margin-right: 400px;
+  border: 1px solid #FAD100;
+  z-index: 2;
+  animation: HS-SecondImage-Slide 1s ease forwards;
+  opacity: 0.5;
+  transform: translate(10px, 10px);
+}
+
+@keyframes HS-SecondImage-Slide {
+  from {
+    opacity: 0.5;
+    transform: translate(10px, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+  }
+  
+}
 .Background-effect-display {
   display: flex;
   justify-content: space-between;

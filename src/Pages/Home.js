@@ -1,10 +1,10 @@
 import React from 'react'
 import './Home.css'
 import BackgroundImage1 from  '../Assets/BackgroundImage1.png'
-import BackgroundImage2 from  '../Assets/BackgroundImage2.png'
 import HeroSectionImage from '../Assets/HeroSectionImage.jpg'
 import { Link } from "react-router-dom";
 import Section2 from '../Components/Home/Section2/Section2'
+import Section3 from '../Components/Home/Section3/Section3';
 
 export default function Home() {
 
@@ -47,6 +47,8 @@ export default function Home() {
         </div>
         
         <Section2/>
+        <Section3/>
+        
     </div>
   )
 }

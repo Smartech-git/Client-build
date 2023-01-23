@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import './Section2.css'
 import {ReactComponent as Call} from '../../../Icons/call.svg';
 import {ReactComponent as Slide1} from '../../../Assets/Section2ImageSlide1.svg'
@@ -8,14 +8,11 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Section2() {
 
-    const { ref, inView, entry } = useInView({
+    const { ref, inView} = useInView({
         threshold: 0.6,
         triggerOnce: true,
     });
     
-    useEffect(() => {
-        console.log(entry)
-    }, [inView, entry])
 
   return (
     <div ref={ref} className='Section2'>

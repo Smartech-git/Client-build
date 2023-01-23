@@ -44,10 +44,10 @@ export default function Section2() {
         <div className='Section2-Right'>
             <img src={Section2Image} alt="Section2Image"/>
             <div className={`Slide1 ${inView ? 'Section2Slide1-animate' : ''}`}>
-                <Slide1 width='160'/>
+                <Slide1 width='160' height="fit-content"/>
             </div>
             <div className = {`Slide2 ${inView ? 'Section2Slide2-animate' : ''}`}>
-               <Slide2 width='160'/> 
+               <Slide2 width='160' height="fit-content"/> 
             </div>  
         </div>
         

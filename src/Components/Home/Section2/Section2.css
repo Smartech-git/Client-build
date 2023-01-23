@@ -117,14 +117,11 @@
     position: absolute;
     margin-top: -40px;
     margin-left: -80px;
-    transform: scale(1);
+    transform: translateY(0px);
     opacity: 0;
-    transition: transform 0.6s ease 0.3s;
+    transition: transform 0.6s ease;
 }
 
-.Section2-Right > .Slide1:hover {
-    transform: scale(1.2);
-}
 
 .Section2Slide1-animate {
     animation: Section2Slide1-slide 0.8s ease-out 0.9s forwards;
@@ -150,7 +147,7 @@
     transition: transform 0.6s ease;
 }
 
-.Section2-Right > .Slide1:hover, .Section2-Right >.Slide2:hover {
+.Section2-Right > .Slide1:hover{
     transform: translateY(-20px);
 }
 .Section2Slide2-animate {
@@ -167,4 +164,8 @@
         margin-top: -260px;
     }
     
+}
+
+.Section2-Right > .Slide1:hover,  .Section2-Right >.Slide2:hover {
+    transform: translateY(-20px);
 }

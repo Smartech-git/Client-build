@@ -1,9 +1,8 @@
 .Section2 {
-    padding: 0 200px 0 200px;
+    padding: 100px 200px 100px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
 }
 .Top-Text{
     display: flex;
@@ -20,7 +19,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.07em;
     color: #FAD100;
@@ -58,7 +57,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.07em;
     color: #000000;
@@ -66,7 +65,7 @@
 }
 .Section2-ActionCall {
     display: flex;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .Section2-ActionCall > .Icon {
     background-color: #021126;
@@ -118,11 +117,17 @@
     position: absolute;
     margin-top: -100px;
     margin-left: -60px;
+    transform: scale(1);
     opacity: 0;
+    transition: transform 0.6s ease;
+}
+
+.Section2-Right > .Slide1:hover {
+    transform: scale(1.2);
 }
 
 .Section2Slide1-animate {
-    animation: Section2Slide1-slide 1s ease 0.7s forwards;
+    animation: Section2Slide1-slide 0.8s ease-out 0.6s forwards;
 }
 
 @keyframes Section2Slide1-slide {
@@ -141,9 +146,15 @@
     margin-top: -290px;
     margin-left: 250px;
     opacity: 0;
+    transform: scale(1);
+    transition: transform 0.6s ease;
+}
+
+.Section2-Right > .Slide1:hover, .Section2-Right >.Slide2:hover {
+    transform: scale(1.1);
 }
 .Section2Slide2-animate {
-    animation: Section2Slide2-slide 1s ease  forwards;
+    animation: Section2Slide2-slide 0.8s ease-out  forwards;
 }
 
 @keyframes Section2Slide2-slide {

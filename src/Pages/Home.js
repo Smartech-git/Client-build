@@ -6,6 +6,7 @@ import HeroSectionImage2 from '../Assets/HeroSectionImage2.jpg'
 import { Link } from "react-router-dom";
 import Section2 from '../Components/Home/Section2/Section2'
 import Section3 from '../Components/Home/Section3/Section3';
+import Section4 from '../Components/Home/Section4/Section4'
 
 export default function Home() {
 
@@ -50,6 +51,7 @@ export default function Home() {
         
         <Section2/>
         <Section3/>
+        <Section4/>
 
     </div>
   )

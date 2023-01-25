@@ -123,7 +123,7 @@
 
 
 .Section2Slide1-animate {
-    animation: Section2Slide1-slide 0.8s ease-out 0.9s forwards;
+    animation: Section2Slide1-slide 0.8s ease 0.9s forwards;
 }
 
 @keyframes Section2Slide1-slide {

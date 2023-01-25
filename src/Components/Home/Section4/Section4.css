@@ -23,7 +23,7 @@
 }
 
 .Section4Slide-Animate {
-    animation: Section4Slide-Animate 0.8s ease 0.9s forwards;
+    animation: Section4Slide-Animate 0.8s ease 0.4s forwards;
 }
 
 @keyframes Section4Slide-Animate {

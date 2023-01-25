@@ -27,7 +27,7 @@ export default function Section3() {
 
   return (
     <div  ref={ref} style={{ backgroundImage: `url(${BackgroundImage2})` }} className='Section3'>
-        <div className= 'Section3-Texts'>
+        <div className= 'Section3-Left'>
             <div className='Section3-TopText'>
                 <div></div>
                 <span className={inView ? 'TopText-animate': ''}>Core Services</span>
@@ -37,7 +37,7 @@ export default function Section3() {
             Lorem ipsum dolor sit amet consectetur. Gravida eget sagittis ornare ac ipsum dolor sit amet.
             </p>
         </div>
-        <div className="Section3-Cards">
+        <div className="Section3-Right">
             <Link className={`CardLink ${inView ? 'CardEntry' : ''}`} to="/About" >
                <div onMouseEnter={()=> { handleOnMouseEnter(setArrowState1)}} onMouseLeave ={()=> handleOnMouseLeave(setArrowState1)} className={`Section3-Card`}>
                     <h3>Mechanical Engineering</h3>

@@ -5,7 +5,7 @@ import  {ReactComponent as Email} from  '../../Icons/email.svg'
 import  {ReactComponent as Facebook} from  '../../Icons/facebook.svg'
 import  {ReactComponent as Linkedin} from  '../../Icons/linkedin.svg'
 import  {ReactComponent as Twitter} from  '../../Icons/twitter.svg'
-import Logo from '../../Assets/logo.png'
+import Logo from '../logo/Logo';
 import './Header.css'
 
 export default function Header() {
@@ -40,11 +40,7 @@ export default function Header() {
       </div>
 
       <div className='BottomHeader'>
-        <div className="Logo">
-          <Link style={{textDecoration: 'none'}}  to={'/'}>
-              <img src={Logo} alt='Logo' />
-          </Link>
-        </div>
+        <Logo/>
 
         <div className='Nav'>
           <Link className='NavLink' style={{textDecoration: 'none'}} to={'/'}>

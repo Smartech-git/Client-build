@@ -1,5 +1,71 @@
 .Footer {
-    padding: 100px 200px 100px 200px;
-    height: 80vh;
+    padding: 50px 200px 100px 200px;
+    height: 50vh;
     background-color: #021126;
+    display: flex;
+    flex-direction: column; 
+}
+
+.Footer-Details {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-Left {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    border-right: 3px solid #FAD100;
+    padding-right: 100px;
+}
+
+.Footer-Left > p {
+    font-family: 'Inter', sans-serif;;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.Footer-Left > .Contact {
+    width: 100%;
+}
+
+.Footer-Center{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.FooterCenter-Link > span {
+    font-family: 'Inter', sans-serif;;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.Footer-Right {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.Terms-Conditions > h3 {
+    font-family: 'Inter', sans-serif;;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    margin: 0;
 }

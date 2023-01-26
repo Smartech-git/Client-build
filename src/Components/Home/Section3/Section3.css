@@ -24,7 +24,7 @@
 }
 
 .Section3-TopText > span {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -35,7 +35,7 @@
 }
 
 .Section3-Left > h1 {
-    font-family: 'Inter';
+    font-family:'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -45,7 +45,7 @@
 }
 
 .Section3-Left > p {
-    font-family: 'Inter';
+    font-family:'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -150,7 +150,7 @@
 }
 
 .Section3-Card > h3 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -162,7 +162,7 @@
 }
 
 .Section3-Card > p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 14px;

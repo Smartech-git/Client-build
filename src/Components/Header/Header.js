@@ -5,7 +5,7 @@ import  {ReactComponent as Email} from  '../../Icons/email.svg'
 import  {ReactComponent as Facebook} from  '../../Icons/facebook.svg'
 import  {ReactComponent as Linkedin} from  '../../Icons/linkedin.svg'
 import  {ReactComponent as Twitter} from  '../../Icons/twitter.svg'
-import Logo from '../logo/Logo';
+import Logo from '../Logo/Logo';
 import './Header.css'
 
 export default function Header() {

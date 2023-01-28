@@ -1,0 +1,109 @@
+.AboutSection2 {
+    padding: 10px 200px 50px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(2, 17, 38, 0.8);
+}
+
+.AboutSection2-Info {
+    display: flex;
+    height: 200px;
+    width: fit-content;
+    margin-top: 100px;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.AboutSection2Info-animate {
+    animation: AboutSection2-Info 0.8s ease 0.3s forwards;
+ }
+ 
+ .AboutSection2Info-animate:nth-child(2) {
+    animation: AboutSection2-Info 0.8s ease 0.9s forwards;
+ }
+
+ .AboutSection2Info-animate:nth-child(3) {
+    animation: AboutSection2-Info 0.8s ease 1.2s forwards;
+ }
+
+ @keyframes AboutSection2-Info {
+     from {
+         opacity: 0;
+         transform: translateY(50px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+     
+ }
+
+.VerticalLine {
+    background-color: #FAD100;
+    width: 3px;    
+    margin-right: 50px;
+    height: 0%; 
+    opacity: 0;
+}
+
+.VerticalLine-animate {
+    animation: VerticalLine 0.8s ease 0.6s forwards;
+}
+
+.VerticalLine-animate:nth-child(2){
+    animation: VerticalLine 0.8s ease 1.2s forwards;
+}
+
+.VerticalLine-animate:nth-child(3){
+    animation: VerticalLine 0.8s ease 1.5s forwards;
+}
+
+
+@keyframes VerticalLine {
+    from {
+        opacity: 0;
+        height: 0%;
+    }
+    to {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+.FirstInfoContents {
+    display: flex;
+    flex-direction: column;
+}
+.FirstInfoContent-top {
+    display: flex;
+    align-items: center;
+}
+
+.FirstInfoContent-top > span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    margin-left: 20px;
+    width: 200px;
+}
+
+.FirstInfoContents > p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    width: 350px;
+}

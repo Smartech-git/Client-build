@@ -1,0 +1,11 @@
+.About {
+    display: flex;
+    flex-direction: column;
+}
+
+.About.TopText > div {
+    background-color: #021126;
+    width: 50px;
+    height: 3px;
+    margin-right: 10px;
+}

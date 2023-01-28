@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React  from 'react'
 import './Home.css'
 import BackgroundImage1 from  '../Assets/BackgroundImage1.png'
 import HeroSectionImage from '../Assets/HeroSectionImage.jpg'
@@ -9,12 +9,6 @@ import Section3 from '../Components/Home/Section3/Section3';
 import Section4 from '../Components/Home/Section4/Section4'
 
 export default function Home() {
-
-  let location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0,0)
-  }, [location])
 
   return (
     <div className='Home'>

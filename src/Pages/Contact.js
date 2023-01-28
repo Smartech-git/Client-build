@@ -1,13 +1,6 @@
-import React, {useEffect} from 'react'
-import { useLocation } from 'react-router-dom'
+import React from 'react'
 
 export default function Contact() {
-
-    let location= useLocation()
-    
-    useEffect(() => {
-      window.scrollTo(0,0)
-    }, [location])
 
   return (
     <div>Contact</div>

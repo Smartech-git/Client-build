@@ -1,6 +1,6 @@
 .AboutSection1{
     display: flex;
-    padding: 100px 200px 100px 200px;
+    padding: 100px 200px 50px 200px;
     flex-direction: column;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .AboutSection1Bottom-animate {
-    animation: AboutSection1Bottom-animate 0.8s ease 0.9s forwards;
+    animation: AboutSection1Bottom-animate 0.8s ease 1.3s forwards;
 }
 
 @keyframes AboutSection1Bottom-animate {

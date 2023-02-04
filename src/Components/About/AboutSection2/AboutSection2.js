@@ -23,7 +23,7 @@ export default function AboutSection2() {
                     <span>Materials engineering</span>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur. Diam sed quisque mattis arcu. Viverra elementum massa vulputate at integer diam ut sit blandit. Vitae ut ac penatibus aliquam eu congue pellentesque duis.
+                Our material engineering services provide cutting-edge solutions that utilize advanced materials and techniques to enhance product performance and meet the specific needs of our clients in various industries.
                 </p>
             </div>
         </div>
@@ -35,7 +35,7 @@ export default function AboutSection2() {
                     <span>Repairs</span>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur. Diam sed quisque mattis arcu. Viverra elementum massa vulputate at integer diam ut sit blandit. Vitae ut ac penatibus aliquam eu congue pellentesque duis.
+                    Offering comprehensive solutions for fixing and maintaining products, utilizing expert technicians and cutting-edge techniques to restore products to optimal functioning.
                 </p>
             </div>
         </div>
@@ -47,7 +47,7 @@ export default function AboutSection2() {
                     <span>Manufacturing</span>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur. Diam sed quisque mattis arcu. Viverra elementum massa vulputate at integer diam ut sit blandit. Vitae ut ac penatibus aliquam eu congue pellentesque duis.
+                Provide efficient and cost-effective production solutions, utilizing state-of-the-art equipment and techniques to deliver high-quality products to meet the demands of our clients.
                 </p>
             </div>
         </div>

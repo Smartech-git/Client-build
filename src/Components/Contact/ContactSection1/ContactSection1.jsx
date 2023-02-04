@@ -29,7 +29,10 @@ export default function ContactSection1() {
             </div>
 
             <div className="ContactSection1-Right">
-                <img src={ContactPageImage} alt="ContactPageImage" />
+                <div className='ContactPageImage'>
+                   <img src={ContactPageImage} alt="ContactPageImage" /> 
+                </div>
+                
                 <div className= {`ContactPage-GridSquare ${inView ? 'ContactPageGridSquare-animate' : ''}`}>
                    <GridSquare width='150' height='fit-content' />  
                 </div>

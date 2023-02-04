@@ -17,8 +17,8 @@ export default function Footer() {
       <div className='Footer-Details'>
         <div className='Footer-Left'>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Venenatis purus orci tristique amet nec id sit porttitor.
-            <br/> <br/> Morbi cursus enim ut elementum phasellus id aliquam aliquam. Eros purus turpis in at ullamcorper ornare. Facilisi velit maecenas malesuada ac velit.
+            A world-class provider of cast metal products and services. Our foundry has been a trusted leader in the industry for many years, delivering high-quality products and unparalleled customer service.
+            <br/> <br/> With state-of-the-art equipment, skilled technicians, and a commitment to sustainability.
             </p>
           <div className='Contact'>
             <div className='ContactPhone'>

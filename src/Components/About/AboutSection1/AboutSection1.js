@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutSection1.css'
-import { useInView } from 'react-intersection-observer';
+import { useInView, InView } from 'react-intersection-observer';
 import {ReactComponent as GridSquare} from '../../../Assets/GridSquare.svg'
 import {ReactComponent as Slide1} from '../../../Assets/AboutSection1Slide1.svg'
 import {ReactComponent as Slide2} from '../../../Assets/AboutSection1Slide2.svg'
@@ -13,6 +13,7 @@ export default function AboutSection1() {
     triggerOnce: true,
   });
 
+
   return (
     <div ref={ref} className='AboutSection1'>
       <div className='AboutSection1-TopText'>
@@ -23,7 +24,8 @@ export default function AboutSection1() {
         <div className='AboutText-Container'>
           <div className='AboutText'>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Porta nibh sit nibh pretium varius. Ornare duis gravida non aliquam in. Lacinia diam lectus cum amet eu. Vulputate at ac fringilla quam nisi. Vestibulum semper ac consequat ut. Placerat magna habitant curabitur sodales pellentesque malesuada imperdiet. Quis posuere placerat mus integer interdum pellentesque risus. Eleifend enim nulla id egestas in congue sit.
+            A world-class provider of cast metal products and services. Our foundry has been a trusted leader in the industry for many years, delivering high-quality products and unparalleled customer service. With state-of-the-art equipment, skilled technicians, and a commitment to sustainability, we are dedicated to exceeding our customers' expectations. <br/><br/>
+             Our goal is to be your partner in success, delivering the products and services you need to achieve your goals. Contact us today to learn more about our foundry and how we can help you succeed.
             </p>
           </div>
           <div className={`About-BlockEffect ${inView ? 'AboutBlockEffect-animate' : ''}`}>
@@ -34,11 +36,16 @@ export default function AboutSection1() {
           
         </div>
       </div>
-      <div className={`AboutSection1-bottom ${inView ? 'AboutSection1Bottom-animate' : ''}`}>
-        <Slide1 width='200' height='fit-content'/>
-        <Slide2 width='200' height='fit-content'/>
-        <Slide3 width='200' height='fit-content'/>
-      </div>
+      <InView triggerOnce={true} threshold={0.2}>
+        {({ inView, ref}) => (
+          <div ref={ref} className={`AboutSection1-bottom ${inView ? 'AboutSection1Bottom-animate' : ''}`}>
+            <Slide1 width='200' height='fit-content'/>
+            <Slide2 width='200' height='fit-content'/>
+            <Slide3 width='200' height='fit-content'/>
+          </div>
+        )}
+      </InView>
+      
     </div>
   )
 }

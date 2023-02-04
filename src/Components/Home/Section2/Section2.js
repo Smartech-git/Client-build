@@ -25,9 +25,7 @@ export default function Section2() {
                 </div>
                 <h1>In-depth experience in production delivery</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur. Gravida eget sagittis 
-                    ornare ac etiam eu bibendum molestie. Senectus venenatis morbi a 
-                    nec eget quis placerat viverra mauris.
+                From conducting market research to working with cross-functional teams and tracking product performance, our team has the expertise and experience to deliver exceptional results.
                 </p>
             </div>
             <div className="Section2-ActionCall">

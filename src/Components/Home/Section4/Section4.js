@@ -33,9 +33,7 @@ export default function Section4() {
           </div>
 
           <h1>Company’s Vision</h1>
-          <p>orem ipsum dolor sit amet consectetur. Gravida eget sagittis ornare ac etiam eu bibendum molestie. 
-            Senectus venenatis.Lorem ipsum dolor sit amet consectetur. Gravida eget sagittis ornare Lo. <br/><br/> rem ipsum dolor sit amet consectetur.
-             Gravida eget sagittis ornare ac etiam eu bibendum molestie. Senectus venenatis.
+          <p>Our vision is to lead sustainable development through innovative and impactful products and services, reaching communities worldwide. <br/><br/> We strive to make a positive impact on the environment and society, By combining cutting-edge technology with a commitment to responsible manufacturing practices.
           </p>
           <div className="Section4-Profile">
             <div className='Profile-Pic'>

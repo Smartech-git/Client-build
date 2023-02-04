@@ -13,7 +13,7 @@ export default function Section3() {
     const [arrowState2, setArrowState2] = useState();
     const [arrowState3, setArrowState3] = useState();
 
-    const { ref, inView, entry } = useInView({
+    const { ref, inView} = useInView({
         threshold: 0.6,
         triggerOnce: true,
     });
@@ -34,7 +34,7 @@ export default function Section3() {
             </div>
             <h1>Our services and solutions</h1>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Gravida eget sagittis ornare ac ipsum dolor sit amet.
+                Our services and solutions offer a comprehensive approach to delivering innovative and impactful products that meet the evolving needs of our clients.
             </p>
         </div>
         <div className="Section3-Right">
@@ -46,7 +46,7 @@ export default function Section3() {
                     </div>
                     
                     <p>
-                    Lorem ipsum dolor sit amet consectetur. Interdum non non eu felis aliquam tincidunt suspendisse. 
+                    Cutting-edge solutions that utilize advanced materials and techniques to enhance product performance 
                     </p>
                     <ArrowDirect className={`Arrow-Right ${arrowState1}`} width="24" height="fit-content"/>
                 </div>
@@ -61,7 +61,7 @@ export default function Section3() {
                     </div>
                     
                     <p>
-                    Lorem ipsum dolor sit amet consectetur.  Lorem ipsum dolor sit amet consectetur Interdum non non eu felis . 
+                    Utilizing state-of-the-art equipment and techniques to deliver high-quality products
                     </p>
                     <ArrowDirect className={`Arrow-Right ${arrowState2}`}  width="24" height="fit-content"/>
                 </div> 
@@ -75,7 +75,7 @@ export default function Section3() {
                     </div>
                     
                     <p>
-                    Tincidunt suspendisse Lorem ipsum dolor sit amet consectetur. Interdum non non eu felis aliquam tincidunt. 
+                    Offering comprehensive solutions for fixing and maintaining maufactured parts
                     </p>
                     <ArrowDirect className={`Arrow-Right ${arrowState3}`}  width="24" height="fit-content"/>
                 </div>

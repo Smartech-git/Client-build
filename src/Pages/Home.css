@@ -46,7 +46,7 @@
   position: relative;
   top: 10px;
   opacity: 0;
-  animation: fadeInText 1s ease  forwards;
+  animation: fadeInText 1s ease 0.3s  forwards;
 }
 
 @keyframes fadeInText {
@@ -64,7 +64,7 @@
   position: relative;
   top: 10px;
   opacity: 0;
-  animation: fadeInText2 1s ease 0.6s forwards;
+  animation: fadeInText2 1s ease 0.9s forwards;
 }
 
 @keyframes fadeInText2 {
@@ -160,14 +160,14 @@
   margin-right: 400px;
   border: 1px solid #FAD100;
   z-index: 2;
-  animation: HS-SecondImage-Slide 1s ease forwards;
-  opacity: 0.5;
+  animation: HS-SecondImage-Slide 1s ease 0.3s forwards;
+  opacity: 0;
   transform: translate(10px, 10px);
 }
 
 @keyframes HS-SecondImage-Slide {
   from {
-    opacity: 0.5;
+    opacity: 0;
     transform: translate(10px, 10px);
   }
   to {

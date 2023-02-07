@@ -1,6 +1,6 @@
 .Header {
     width: 100%;
-    height: 90px;
+    height: fit-content;
     background-color: #021126;
     box-sizing: border-box;
 }
@@ -18,11 +18,11 @@
     width: 330px;
     justify-content: space-between;
 }
-.ContactPhone, .ContactEmail {
+.Contact-Header {
     display: flex;
     align-items: center;
 }
-.ContactPhone span {
+.Contact-Header span {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -30,14 +30,7 @@
     color: white;
     margin-left: 6px;
 }
-.ContactEmail span {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    color: #FFFFFF;
-    margin-left: 6px;
-}
+
 .Socials {
     width: 80px;
     display: flex;
@@ -62,6 +55,9 @@
     width: 220px;
 }
 
+.NavLink {
+    cursor: pointer;
+}
 .Nav span{
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -69,8 +65,7 @@
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.07em;
-    color: #FFFFFF;
-    cursor: pointer;
+    color: #FFFFFF;   
 }
 
 .NavContent {
@@ -98,4 +93,56 @@
         width: 100%;
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 1300px) {
+    .TopHeader {
+        padding: 0 100px 0 100px
+    }
+    .BottomHeader {
+        padding: 0 100px 0 100px
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .TopHeader {
+        padding: 0 50px 0 50px
+    }
+
+    .Contact {
+        width: 280px;
+    }
+    .Contact-Header  span {
+        font-size: 10px;
+    }
+    .BottomHeader {
+        padding: 0 50px 0 50px;
+    }
+
+    .NavLink {
+        cursor: none;
+    }
+
+    .Nav{
+        width: 180px
+    }
+    .Nav span {
+        font-size : 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .TopHeader {
+        display: none;
+    }
+
+    .BottomHeader {
+        padding: 0 20px 0 20px;
+        height: 70px;
+    }
+
+    .Nav {
+        width: 180px;
+    }
+
 }

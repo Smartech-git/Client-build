@@ -22,11 +22,11 @@ export default function Header() {
       <div className='TopHeader'>
 
         <div className='Contact'>
-          <div className='ContactPhone'>
+          <div className='Contact-Header'>
             <Call width ='14' />
             <span>+234 712 345 6789</span>
           </div>
-          <div className='ContactEmail'>
+          <div className='Contact-Header'>
             <Email width ='14'/>
             <span>contact@company.com</span>
           </div>  

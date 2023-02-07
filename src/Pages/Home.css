@@ -6,7 +6,6 @@
 .Section1 {
   display: flex;
   padding: 0 200px 0 200px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90vh;
@@ -91,6 +90,10 @@
   color: #FFFFFF;
 }
 
+.ActionButton-link {
+  cursor: pointer;
+}
+
 .Action-Button {
   width: 120px;
   height: 50px;
@@ -99,7 +102,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  cursor: pointer;
 }
 .Action-Button > span {
   font-family: 'Inter', sans-serif;
@@ -199,4 +201,181 @@
   width: 15px;
   height: 350px;
   background-color: #FAD100;
+}
+
+@media screen and (max-width: 1300px) {
+  .Section1 {
+    padding: 0 100px 0 100px;
+  }
+
+  .HeroSection-texts > span {
+    font-size: 10px;
+  }
+
+  .HeroSection-texts h1 {
+    font-size: 40px;
+  }
+
+  .HeroSection-subText > p {
+    font-size: 10px;
+    width: 350px;
+  }
+
+  .Action-Button {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  .Action-Button > span {
+    font-size: 12px;
+  }
+
+  .HeroSection-Right {
+    width: 320px;
+  }
+
+  .Block-effect {
+    margin-top: 160px;
+    margin-right: 340px;
+    width: 80px;
+    height: 80px;
+
+  }
+
+  .Background-effect-display {
+    width: 80px;
+  }
+  @keyframes spread {
+    from {
+      width: 80px;
+      opacity: 0;
+    }
+    to {
+      width: 160px;
+      opacity: 1;
+    }
+  }
+
+  .Background-effect-display > div {
+    width: 10px;
+    height: 260px;
+  }
+
+  .HeroSection-FirstImage {
+    width: 320px;
+    margin-top: 40px;
+  }
+
+  .HeroSection-SecondImage {
+    width: 100px;
+    margin-right: 350px;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  .Section1 {
+    justify-content: center;
+    padding: 0 50px 0 50px;
+  }
+
+  .HeroSection-Left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .HeroSection-texts > span {
+    font-size: 12px;
+  }
+
+  .HeroSection-texts h1 {
+    font-size: 52px;
+  }
+
+  .HeroSection-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .HeroSection-subText {
+
+    display: flex;
+    justify-content: center;
+  }
+  .HeroSection-subText > p {
+    text-align: center;
+    font-size: 11px;
+    width: 480px;
+  }
+
+  .ActionButton-link {
+    cursor: none
+  }
+
+  .Action-Button {
+    width: 180px;
+    height: 50px;
+  }
+
+  .Action-Button > span {
+    font-size: 14px;
+  }
+
+  .HeroSection-Right {
+    display: none;
+  }
+  
+}
+
+@media screen and (orientation: landscape) and (max-height: 550px) {
+  .Section1 {
+    height: 90vw;
+  }
+  
+}
+@media screen and (max-width: 550px) {
+  .Section1 {
+    padding:  0 20px 0 20px;
+  }
+
+  .HeroSection-texts > span {
+    font-size: 10px;
+  }
+
+  .HeroSection-texts h1 {
+    font-size: 38px;
+  }
+
+  .HeroSection-subText > p {
+    font-size: 10px;
+    width: 260px;
+  }
+
+  .Action-Button {
+    width: 160px;
+    height: 40px;
+    margin-top: 8vh;
+    cursor: none;
+  }
+  .Action-Button > span {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .HeroSection-texts > h1 {
+    font-size: 30px;
+  }
+  .HeroSection-subText >  p {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .Section1 {
+    padding: 0 28vw 0 28vw;
+  }
 }

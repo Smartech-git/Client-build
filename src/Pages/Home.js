@@ -3,7 +3,7 @@ import './Home.css'
 import BackgroundImage1 from  '../Assets/BackgroundImage1.png'
 import HeroSectionImage from '../Assets/HeroSectionImage.jpg'
 import HeroSectionImage2 from '../Assets/HeroSectionImage2.jpg'
-import { Link, useLocation } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Section2 from '../Components/Home/Section2/Section2'
 import Section3 from '../Components/Home/Section3/Section3';
 import Section4 from '../Components/Home/Section4/Section4'
@@ -17,7 +17,7 @@ export default function Home() {
           <div className='HeroSection-Left'>
 
             <div className="HeroSection-texts">
-              <span>Welcome to Forged</span>
+              <span>Welcome to Union Foundry</span>
               <h1>Best quality in</h1>
               <h1><span className='bold first'>Innovations</span> and</h1>
               <h1><span className='bold second'>Manufacturing</span></h1>
@@ -25,7 +25,7 @@ export default function Home() {
                 <p>Our commitment to innovation and best quality manufacturing allows us to consistently meet the evolving needs of our customers.</p>
               </div>
             </div>
-            <Link style={{textDecoration: 'none'}} to={'/About'}>
+            <Link className='ActionButton-link' style={{textDecoration: 'none'}} to={'/About'}>
               <div className='Action-Button'>
                 <span>Learn More</span>
               </div>

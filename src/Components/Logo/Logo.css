@@ -4,10 +4,14 @@
     height: 50px;
     display: flex;
     justify-content: center;
-    cursor: pointer;
 }
 
-.Logo img {
+.LogoLink {
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+.Logo img:nth-child(1) {
     height: fit-content;
     width: 160px;
     position: relative;
@@ -16,12 +20,38 @@
     animation: fadeIn 0.7s ease-in forwards;
 }
 
+.Logo img:nth-child(2){
+    display: none;
+}
+
 @keyframes fadeIn {
     from {
         bottom: -25px;
     }
     to{
         bottom: -14.5px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Logo {
+        width: fit-content;
+        height: 100%;
+        background-color: #021126;
+        align-items: center;
+    }
+    .LogoLink {
+        cursor: none;
+    }
+    .Logo img:nth-child(1){
+        display: none;
+    }
+    .Logo img:nth-child(2) {
+        display: block;
+        width: 30px;
+        bottom: 0;
+        animation-name: none;
         opacity: 1;
     }
 }

@@ -15,7 +15,7 @@
 .Footer-Left {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 350px;
     border-right: 3px solid #FAD100;
     padding-right: 100px;
 }
@@ -30,8 +30,26 @@
     color: #FFFFFF;
 }
 
-.Footer-Left > .Contact {
+.Footer-Left > .Contact-Footer {
     width: 100%;
+}
+
+.Contact-Footer {
+    display: flex;
+}
+
+.Contact-Footer div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.Contact-Footer span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    margin-left: 6px;
 }
 
 .Footer-Center{

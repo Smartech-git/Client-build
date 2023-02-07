@@ -20,7 +20,7 @@ export default function Footer() {
             A world-class provider of cast metal products and services. Our foundry has been a trusted leader in the industry for many years, delivering high-quality products and unparalleled customer service.
             <br/> <br/> With state-of-the-art equipment, skilled technicians, and a commitment to sustainability.
             </p>
-          <div className='Contact'>
+          <div className='Contact-Footer'>
             <div className='ContactPhone'>
               <Call width ='14' />
               <span>+234 712 345 6789</span>

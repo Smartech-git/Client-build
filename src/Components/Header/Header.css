@@ -102,8 +102,12 @@
     .BottomHeader {
         padding: 0 100px 0 100px
     }
+    .Contact-Header span {
+        font-size: 11px;
+    }
     
 }
+
 @media screen and (max-width: 900px) {
     .TopHeader {
         padding: 0 50px 0 50px

@@ -84,7 +84,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.Section2-ActionCall > .Texts >h3:nth-child(1){
+.Section2-ActionCall > .Texts > h3:nth-child(1){
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -114,9 +114,9 @@
 
 .Section2-Right > .Slide1 {
     position: absolute;
-    margin-top: -40px;
+    margin-top: -130px;
     margin-left: -80px;
-    transform: translateY(0px);
+    transform: translateY(40px);
     opacity: 0;
     transition: transform 0.6s ease;
 }
@@ -129,17 +129,17 @@
 @keyframes Section2Slide1-slide {
     from{
         opacity: 0;
-        margin-top: -40px;
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
-        margin-top: -130px;
+        transform: translateY(0px);
     }
     
 }
 .Section2-Right > .Slide2 {
     position: absolute;
-    margin-top: -200px;
+    margin-top: -260px;
     margin-left: 250px;
     opacity: 0;
     transform: translateY(0px);
@@ -156,11 +156,11 @@
 @keyframes Section2Slide2-slide {
     from{
         opacity: 0;
-        margin-top: -200px;
+        transform: translateY(50px);
     }
     to {
         opacity: 1;
-        margin-top: -260px;
+       transform: translateY(0);
     }
     
 }
@@ -168,3 +168,212 @@
 .Section2-Right > .Slide1:hover,  .Section2-Right >.Slide2:hover {
     transform: translateY(-20px);
 }
+
+@media screen and (max-width: 1300px) {
+    .Section2 {
+        padding: 100px;
+    }
+    .Top-Text > div {
+        width: 40px;
+    }
+    .Top-Text > span {
+        font-size: 17px;
+    }
+
+    .Section2-Texts {
+        width: 320px;
+    }
+    .Section2-Texts > h1 {
+        font-size: 26px;
+    }
+
+    .Section2-Texts > p {
+        font-size: 16px;
+    }
+
+    .Section2-ActionCall {
+        margin-top: 30px;
+    }
+
+    .Section2-ActionCall > .Icon {
+        width: 45px;
+        height: 45px;
+    }
+    .Section2-ActionCall > .Icon > svg {
+        width: 22px;
+    }
+
+    .Section2-ActionCall > .Texts {
+        height: 45px;
+        padding:0 30px 0 20px;
+    }
+
+    .Section2-ActionCall > .Texts > h3:nth-child(1){
+        font-size: 13px;
+    }
+
+    .Section2-ActionCall > .Texts > h3:nth-child(2) {
+        font-size: 14px;
+        margin-top: -4px;  
+    }
+
+    .Section2-Right svg {
+        width: 140px;
+    }
+
+    .Section2-Right > img {
+        width: 260px;
+        margin-right: 50px;
+    }
+
+    .Section2-Right > .Slide1 {
+        margin-top: -100px;
+    }
+
+    .Section2-Right > .Slide2 {
+        margin-left: 180px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Section2 {
+        padding: 100px 50px 100px 50px ;
+        flex-direction: column;
+    }
+
+    .Section2-Left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Section2-Texts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    .Top-Text > span {
+        font-size: 20px;
+    }
+
+    .Section2-Texts > h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .Section2-Texts > p {
+        text-align: center;
+        font-size: 22px;
+        line-height: 28px;
+        width: 450px
+    }
+
+    .Section2-ActionCall > .Icon {
+        width: 60px;
+        height: 60px;
+    }
+    .Section2-ActionCall > .Icon > svg {
+        width: 28px;
+    }
+
+    .Section2-ActionCall > .Texts {
+        height: 60px;
+    }
+
+    .Section2-ActionCall > .Texts > h3:nth-child(1){
+        font-size: 18px;
+    }
+
+    .Section2-ActionCall > .Texts > h3:nth-child(2) {
+        font-size: 18px; 
+        margin-top: 2px;
+    }
+
+    .Section2-Right {
+        margin-top: 50px;
+    }
+    .Section2-Right > img {
+        width: 320px;
+        margin-right: 0;
+    }
+
+    .Section2-Right svg {
+        width: 160px;
+    }
+
+    .Section2-Right > .Slide1 {
+        margin-top: -130px;
+    }
+
+    .Section2-Right > .Slide2 {
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Section2 {
+        padding: 60px 20px 60px 20px;
+    }
+    .Top-Text > span {
+        font-size: 14px;
+    }
+    .Section2-Texts {
+        width: 300px;
+    }
+    .Section2-Texts > h1 {
+        font-size: 22px;
+    }
+    .Section2-Texts > p {
+        font-size: 14px;
+        line-height: 18px;
+        width: 280px;
+    }
+
+    .Section2-ActionCall > .Icon {
+        width: 50px;
+        height: 50px;
+    }
+    .Section2-ActionCall > .Icon > svg {
+        width: 22px;
+    }
+    .Section2-ActionCall > .Texts {
+        height: 50px;
+        padding: 0 20px 0 15px;
+    }
+    .Section2-ActionCall > .Texts > h3:nth-child(1){
+        font-size: 14px;
+    }
+
+    .Section2-ActionCall > .Texts > h3:nth-child(2) {
+        font-size: 14px; 
+        margin-top: 2px;
+    }
+
+    .Section2-Right {
+        margin-top: 70px;
+    }
+
+    .Section2-Right svg {
+        width: 120px;
+    }
+
+    .Section2-Right > img {
+        width: 200px;
+    }
+
+    .Section2-Right > .Slide1 {
+        margin-top: -90px;
+        margin-left: -60px;
+    }
+
+    .Section2-Right > .Slide2 {
+        margin-left: 140px ;
+        margin-top: -220px;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .Section2 {
+      padding: 100px 28vw 100px 28vw;
+    }
+  }

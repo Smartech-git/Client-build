@@ -187,9 +187,7 @@
         font-size: 26px;
     }
 
-    .Section2-Texts > p {
-        font-size: 16px;
-    }
+    
 
     .Section2-ActionCall {
         margin-top: 30px;
@@ -265,9 +263,13 @@
         text-align: center;
         font-size: 22px;
         line-height: 28px;
-        width: 450px
+        width: 450px;
+        margin-top: -10px;
     }
 
+    .Section2-ActionCall {
+        margin-top: 40px;
+    }
     .Section2-ActionCall > .Icon {
         width: 60px;
         height: 60px;
@@ -290,7 +292,7 @@
     }
 
     .Section2-Right {
-        margin-top: 50px;
+        margin-top: 70px;
     }
     .Section2-Right > img {
         width: 320px;

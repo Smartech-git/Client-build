@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   height: 90vh;
+  max-height: 900px;
 }
 
 .HeroSection {
@@ -233,6 +234,7 @@
 
   .HeroSection-Right {
     width: 320px;
+    margin-right: -40px;
   }
 
   .Block-effect {
@@ -330,7 +332,7 @@
   
 }
 
-@media screen and (orientation: landscape) and (max-height: 550px) {
+@media screen and (orientation: landscape) and (max-height: 500px) and (max-width: 900px){
   .Section1 {
     height: 90vw;
   }
@@ -376,6 +378,7 @@
 
 @media screen and (min-width: 1450px) {
   .Section1 {
-    padding: 0 28vw 0 28vw;
+    padding: 100px 28vw 100px 28vw;
+    height: fit-content;
   }
 }

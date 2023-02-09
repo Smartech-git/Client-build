@@ -195,7 +195,10 @@
         font-size:  26px;
     }
 
-
+    .Section3-Left > p {
+        font-size: 15px;
+        width: 620px;
+    }
     .Section3-Right {
         height: 290px;
     }
@@ -225,7 +228,7 @@
 
 @media screen and (max-width: 900px) {
     .Section3 {
-        padding: 100px 12vw 100px 12vw;
+        padding: 100px 50px 100px 50px;
         align-items: center;
     }
 

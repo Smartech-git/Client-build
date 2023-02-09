@@ -183,12 +183,16 @@
     .Section2-Texts {
         width: 320px;
     }
+
     .Section2-Texts > h1 {
         font-size: 26px;
     }
 
-    
+    .Section2-Texts > p {
+        font-size: 15px;
+    }
 
+    
     .Section2-ActionCall {
         margin-top: 30px;
     }
@@ -263,7 +267,7 @@
         text-align: center;
         font-size: 22px;
         line-height: 28px;
-        width: 450px;
+        width: 500px;
         margin-top: -10px;
     }
 

@@ -1,6 +1,5 @@
 .Footer {
     padding: 50px 200px 100px 200px;
-    height: 50vh;
     background-color: #021126;
     display: flex;
     flex-direction: column; 
@@ -87,3 +86,103 @@
     color: #FFFFFF;
     margin: 0;
 }
+
+@media screen and (max-width: 1300px) {
+    .Footer {
+        padding: 100px 12vw 100px 12vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Footer {
+        padding: 100px 50px 100px 50px;
+    }
+
+    .Footer-Details {
+        margin-top: 20px;
+    }
+
+    .Footer-Left {
+        padding-right: 30px;
+        width: 280px;
+    }
+
+    .Footer-Left > p {
+        font-size: 12px;
+    }
+
+    .Contact-Footer {
+        flex-direction: column;
+    }
+    .ContactEmail {
+        margin-top: -14px;
+    }
+    
+    .Footer-Center {
+        height: 80px;
+    }
+
+    .FooterCenter-Link {
+        cursor: none;
+    }
+
+    .FooterCenter-Link > span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Footer {
+            padding: 60px 20px 60px 20px;
+    }
+
+    .Footer-Details {
+        margin-top: 10px;
+        flex-wrap: wrap
+    }
+
+    .Footer-Left {
+        width: 200px;
+        border-right-width: 2px;
+    }
+
+    .Footer-Left > p {
+        font-size: 11px;
+    }
+
+    .Footer-Center {
+        height: 100px;
+    }
+
+    .Footer-Right {
+        height: 90px;
+        margin-top: 30px;
+    }
+
+    .Contact-Footer span {
+        font-weight: 300;
+        font-size: 11px;
+    }
+    .FooterCenter-Link > span {
+        font-size: 11px;
+    }
+
+    .Socials svg {
+        width: 12px;
+    }
+    .Terms-Conditions > h3 {
+        font-size: 10px;
+    }
+}
+
+@media screen and  (max-width: 340px) {
+    .Footer-Center {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .Footer {
+      padding: 100px 28vw 100px 28vw;
+    }
+  }

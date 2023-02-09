@@ -6,11 +6,15 @@
     background-color: #fff;
 }
 
+.Section4-Left {
+    margin-top: -60px;
+}
+
 .Section4-Slide{
     position: absolute;
     z-index: 3;
-    margin-left: 250px;
-    margin-top: -90px;
+    margin-left: 230px;
+    margin-top: -70px;
     height: fit-content;
     width: fit-content;
     transform: translateY(0px);
@@ -28,11 +32,11 @@
 
 @keyframes Section4Slide-Animate {
     from{
-        margin-top: -90px;
+       transform: translateY(0);
         opacity: 0;
     }
     to {
-        margin-top: -150px;
+        transform: translateY(-40px);
         opacity: 1;
     }
 }
@@ -43,6 +47,7 @@
    position: absolute;
    margin-top: -170px;
    margin-left: -20px;
+   transform: translate(0, 0);
    z-index: 1;
    opacity: 0;
 }
@@ -53,13 +58,11 @@
 @keyframes Section4GridSquare-Animate {
     from{
         opacity: 0;
-        margin-top: -170px;
-        margin-left: -10px;
+        transform: translate(0, 0);
     }
     to{
         opacity: 1;
-        margin-top: -130px;
-        margin-left: -60px;
+        transform: translate(-40px, 40px);
     }
 }
 
@@ -125,14 +128,12 @@
 }
 
 .Profile-Pic {
-    border-right: 3px solid #FAD100;
     margin-right: 20px;
 }
 .Profile-Pic > img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 30px;
 }
 
 .Profile-Details {
@@ -142,12 +143,14 @@
     justify-content: space-between;
     padding-bottom: 10px;
     box-sizing: border-box;
+    border-left: 3px solid #FAD100;
+    padding-left: 30px;
 }
 
 .Profile-Details > h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
     line-height: 17px;
     letter-spacing: 0.07em;
@@ -164,3 +167,192 @@
     letter-spacing: 0.07em;
     color: rgba(0, 0, 0, 0.6);
 }
+
+@media screen and (max-width: 1300px) {
+    .Section4 {
+        padding: 100px 12vw 100px 12vw;
+    }
+
+    .Section4-Left > img {
+        width: 330px;
+    }
+
+    .Section4-Slide > svg {
+        width: 200px;
+    }
+
+    .Section4-GridSquare {
+        margin-left: 10px;
+    }
+
+    @keyframes Section4GridSquare-Animate {
+        from {
+            opacity: 0;
+            transform: (0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate(-60px, 60px);
+        }
+    }
+
+    .Section4-GridSquare > svg {
+        width: 150px ;
+    }
+    .Section4-TopText > div {
+        width: 40px;
+    }
+
+    .Section4-TopText > span {
+        font-size: 17px;
+    }
+
+    .Section4-Right > h1{
+        font-size: 26px;
+    }
+
+    .Section4-Right > p{
+        font-size: 15px;
+    }
+    .Section4-Right {
+       width: 320px; 
+    }
+
+    .Profile-Pic > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Profile-Details {
+        height: 40px;
+    }
+
+    .Profile-Details > h1 {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .Profile-Details > span {
+        font-size: 13px;
+    }
+}
+
+@media screen  and (max-width: 900px) {
+    .Section4 {
+        padding: 100px 50px 170px 50px;
+        flex-direction: column-reverse;
+    }
+
+    .Section4-Left {
+        margin-top: 50px;
+    }
+    .Section4-Slide > svg {
+        width: 219px;
+    }
+
+    .Section4-GridSquare {
+        margin-left: 0px;
+    }
+    .Section4-GridSquare > svg {
+        width: 180px;
+    }
+
+    .Section4-Right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Section4-Right {
+        width: 500px;
+    }
+
+    .Section4-Profile {
+        margin-top: 20px;
+    }
+
+    .Section4-TopText > span {
+        font-size: 20px;
+    }
+    .Section4-Right > h1 {
+        font-size:  40px;
+    }
+
+    .Section4-Right > p {
+        text-align: center;
+        font-size: 22px;
+        line-height: 28px;
+        width: 500px;
+        margin-top: -10px;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .Section4 {
+        padding: 60px 20px 100px 20px;
+    }
+
+    .Section4-TopText > span {
+        font-size: 14px;
+    }
+
+    .Section4-Left > img {
+        width: 230px;
+    }
+
+    .Section4-Profile {
+        margin-top: 20px;
+    }
+    
+    .Profile-Pic > img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .Profile-Details {
+        height: 35px;
+        padding-left: 20px;
+    }
+
+    .Profile-Details > h1 {
+        font-size: 13px;
+    }
+
+    .Profile-Details > span {
+        font-size: 12px;
+    }
+
+    .Section4-Slide {
+        margin-left: 140px;
+    }
+
+    .Section4-Slide > svg {
+        width: 140px ;
+    }
+
+    .Section4-GridSquare {
+        margin-top: -150px;
+        margin-left: 20px;
+    }
+
+    .Section4-GridSquare > svg {
+        width: 120px ;
+    }
+    .Section4-Right > h1 {
+        font-size: 22px;
+    }
+
+    .Section4-Right > p {
+        font-size: 14px;
+        line-height: 18px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width: 1450px) {
+    .Section4 {
+      padding: 100px 28vw 100px 28vw;
+    }
+  }

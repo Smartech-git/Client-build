@@ -24,7 +24,7 @@ export default function Header() {
         <div className='Contact'>
           <div className='Contact-Header'>
             <Call width ='14' />
-            <span>+234 712 345 6789</span>
+            <span>+234 814 0235 206</span>
           </div>
           <div className='Contact-Header'>
             <Email width ='14'/>

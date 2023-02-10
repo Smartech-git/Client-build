@@ -9,7 +9,7 @@ import {ReactComponent as Slide3} from '../../../Assets/AboutSection1Slide3.svg'
 export default function AboutSection1() {
 
   const { ref, inView} = useInView({
-    threshold: 0.6,
+    threshold: 0.3,
     triggerOnce: true,
   });
 

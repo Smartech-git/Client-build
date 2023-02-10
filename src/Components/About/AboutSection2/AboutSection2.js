@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 export default function AboutSection2() {
 
     const { ref, inView} = useInView({
-        threshold: 0.6,
+        threshold: 0.3,
         triggerOnce: true,
     });
 
@@ -20,7 +20,7 @@ export default function AboutSection2() {
             <div className='FirstInfoContents'>
                 <div className='FirstInfoContent-top'>
                     <MechEng width="50" height=" fit-content" />
-                    <span>Materials engineering</span>
+                    <span>Materials <br/> engineering</span>
                 </div>
                 <p>
                 Our material engineering services provide cutting-edge solutions that utilize advanced materials and techniques to enhance product performance and meet the specific needs of our clients in various industries.

@@ -94,7 +94,7 @@
     letter-spacing: 0.07em;
     color: #FFFFFF;
     margin-left: 20px;
-    width: 200px;
+    width: fit-content
 }
 
 .FirstInfoContents > p {
@@ -107,3 +107,81 @@
     color: #FFFFFF;
     width: 350px;
 }
+
+@media screen and (max-width: 1300px) {
+    .AboutSection2 {
+        padding: 10px 12vw 100px 12vw;
+    }
+
+    .FirstInfoContent-top > svg {
+        width: 45px;
+    }
+
+    .FirstInfoContent-top > span {
+        font-size: 20px;
+    }
+
+    .FirstInfoContents > p {
+        font-size: 14px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .AboutSection2 {
+        justify-content: center;
+        padding: 10px 50px 100px 50px;
+    }
+
+    .AboutSection2-Info:nth-child(1) {
+        height: 250px;
+    }
+
+    .FirstInfoContents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .FirstInfoContent-top > span {
+        font-size: 32px;
+    }
+
+    .FirstInfoContents > p {
+        font-size: 18px;
+        width: 350px;
+    }
+
+    .FirstInfoContent-top > svg {
+        width: 54px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .AboutSection2 {
+        padding: 10px 20px 60px 20px;
+    }
+
+    .FirstInfoContent-top > span {
+        font-size: 20px;
+    }
+
+    .FirstInfoContents > p {
+        font-size: 13px;
+        width: 270px ;
+    }
+    .FirstInfoContent-top > svg {
+        width: 40px;
+    }
+
+    .VerticalLine {
+        width: 2px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .AboutSection2 {
+      padding: 100px 28vw 100px 28vw;
+    }
+  }

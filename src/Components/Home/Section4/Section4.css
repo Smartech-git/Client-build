@@ -13,7 +13,7 @@
 .Section4-Slide{
     position: absolute;
     z-index: 3;
-    margin-left: 230px;
+    margin-left: 190px;
     margin-top: -70px;
     height: fit-content;
     width: fit-content;
@@ -264,7 +264,7 @@
     }
 
     .Section4-Right {
-        width: 500px;
+        width: fit-content;
     }
 
     .Section4-Profile {

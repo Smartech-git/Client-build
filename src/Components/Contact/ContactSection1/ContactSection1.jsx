@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 export default function ContactSection1() {
 
     const { ref, inView} = useInView({
-        threshold: 0.6,
+        threshold: 0.3,
         triggerOnce: true,
     });
 
@@ -46,7 +46,7 @@ export default function ContactSection1() {
                 <div>
                     <Call width='28' height = 'fit-content'/>
                 </div>
-                <span>+234 712 345 6789</span>
+                <span>+234 814 0235 206</span>
             </div>
             <div className='Contact-Details'>
                 <div>

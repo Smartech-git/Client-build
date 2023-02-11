@@ -1,8 +1,7 @@
 .ContactSection1 {
-    padding: 0px 200px 0px 200px;
+    padding: 100px 200px 100px 200px;
     display: flex;
     flex-direction: column;
-    height: 80vh;
     justify-content: center;
 }
 
@@ -41,7 +40,7 @@
 .ContactSection1-Left> p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.07em;
@@ -49,7 +48,7 @@
 }
 
 .ContactSection1-Right {
-    margin-top: -20px;
+    margin-top: 0px;
 }
 .ContactPageImage {
     height: 240px;
@@ -65,32 +64,31 @@
 
 .ContactPage-GridSquare{
     position: absolute;
-    margin-left: -20px;
+    margin-left: -10px;
     z-index: 1;
     margin-top: -140px;
     opacity: 0;
+    transform: translate(0,0);
 }
 
 .ContactPageGridSquare-animate {
-    animation: CPGridSquare 0.6s ease 0.3s forwards;
+    animation: CPGridSquare 0.8s ease 0.3s forwards;
 }
 
 @keyframes CPGridSquare {
     from {
         opacity: 0;
-        margin-top: -140px;
-        margin-left: -20px;
+        transform: translate(0,0);
     }
     to {
         opacity: 1;
-        margin-top: -100px;
-        margin-left: -60px;
+       transform: translate(-40px, 40px);
     }
 }
 
 .ContactSection2-Second {
     display: flex;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .Contact-Details {
@@ -123,3 +121,128 @@
     color: #021126;
     margin-left: 10px;
 }
+
+@media screen and (max-width: 1300px) {
+    .ContactSection1 {
+        padding: 100px 12vw 100px 12vw;
+    }
+
+    .ContactSection1-TopText > div {
+        width: 40px;
+    }
+
+    .ContactSection1-TopText > span {
+        font-size: 17px;
+    }
+
+    .ContactSection1-Left > p {
+        font-size: 15px;
+    }
+
+    .ContactPageImage {
+        height: 200px;
+        width: 210px;
+    }
+
+    .ContactPage-GridSquare {
+        margin-left: 10px;
+        margin-top: -110px;
+    }
+
+    .ContactPage-GridSquare > svg {
+        width: 100px;
+    }
+
+    .Contact-Details > div {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Contact-Details  svg {
+        width: 20px;
+    }
+
+    .Contact-Details > span {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .ContactSection1 {
+        padding: 100px 50px 100px 50px ;
+    }
+
+    .ContactSection1-First{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContactSection1-Left {
+        width: 470px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ContactSection1-TopText > span {
+        font-size: 20px;
+    }
+
+    .ContactSection1-Left > p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .ContactSection1-Right {
+        display: none;
+    }
+
+    .ContactSection2-Second {
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .Contact-Details > div {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .Contact-Details > span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ContactSection1 {
+        padding: 60px 20px 60px 20px;
+    }
+
+    .ContactSection1-TopText > span {
+        font-size: 14px;
+    }
+
+    .ContactSection1-Left {
+        width: 280px ;
+    }
+
+    .ContactSection1-Left > p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .ContactSection2-Second {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Contact-Details:nth-child(2){
+        margin-left: -12px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .ContactSection1 {
+      padding: 100px 28vw 100px 28vw;
+    }
+  }

@@ -38,7 +38,7 @@ export default function Footer() {
           <Link className='FooterCenter-Link'  to='./About' style={{textDecoration: 'none'}}>
             <span>About</span>
           </Link>
-          <Link className='FooterCenter-Link'  to='./Service' style={{textDecoration: 'none'}}>
+          <Link className='FooterCenter-Link'  to='./Contact' style={{textDecoration: 'none'}}>
             <span>Contact Us</span>
           </Link>
         </div>

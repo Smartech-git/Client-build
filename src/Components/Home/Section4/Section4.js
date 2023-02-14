@@ -45,7 +45,7 @@ export default function Section4() {
               <img src={ProfilePic} alt="ProfilePic" />
             </div> */}
             <div className='Profile-Details'>
-              <h1>Okie Edafe Festus</h1>
+              <h1>Okie Godson</h1>
               <span>CEO</span>
             </div>
           </div>

@@ -24,8 +24,8 @@ export default function AboutSection1() {
         <div className='AboutText-Container'>
           <div className='AboutText'>
             <p>
-            A world-class provider of cast metal products and services. Our foundry has been a trusted leader in the industry for many years, delivering high-quality products and unparalleled customer service. With state-of-the-art equipment, skilled technicians, and a commitment to sustainability, we are dedicated to exceeding our customers' expectations. <br/><br/>
-             Our goal is to be your partner in success, delivering the products and services you need to achieve your goals. Contact us today to learn more about our foundry and how we can help you succeed.
+              <span style={{color: "#021126", fontWeight: '700'}}>Union foundry</span> is a world-class provider of cast metal products and services. Our foundry has been a trusted leader in the industry for many years, delivering high-quality products and unparalleled customer service. With state-of-the-art equipment, skilled technicians, and a commitment to sustainability, we are dedicated to exceeding our customers' expectations. <br/><br/>
+              Our goal is to be your partner in success, delivering the products and services you need to achieve your goals. Contact us today to learn more about our foundry and how we can help you succeed.
             </p>
           </div>
           <div className={`About-BlockEffect ${inView ? 'AboutBlockEffect-animate' : ''}`}>

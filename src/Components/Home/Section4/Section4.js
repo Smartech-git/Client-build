@@ -41,9 +41,9 @@ export default function Section4() {
           <p>Our vision is to lead sustainable development through innovative and impactful products and services, reaching communities worldwide. <br/><br/> We strive to make a positive impact on the environment and society, By combining cutting-edge technology with a commitment to responsible manufacturing practices.
           </p>
           <div className="Section4-Profile">
-            {/* <div className='Profile-Pic'>
+            <div className='Profile-Pic'>
               <img src={ProfilePic} alt="ProfilePic" />
-            </div> */}
+            </div>
             <div className='Profile-Details'>
               <h1>Okie Godson</h1>
               <span>CEO</span>

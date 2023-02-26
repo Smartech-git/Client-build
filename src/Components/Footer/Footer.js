@@ -23,7 +23,8 @@ export default function Footer() {
           <div className='Contact-Footer'>
             <div className='ContactPhone'>
               <Call width ='14' />
-              <span>+234 814 0235 206</span>
+              {/* <span>+234 814 0235 206</span> */}
+              <span>+234 123 4567 206</span>
             </div>
             <div className='ContactEmail'>
               <Email width ='14'/>

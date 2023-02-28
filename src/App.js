@@ -7,8 +7,9 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import { useLocation } from 'react-router-dom';
+import { IKContext} from 'imagekitio-react';
 
-
+const urlEndpoint = 'https://ik.imagekit.io/trams/ClientBuild';
 
 function App() {
   let location = useLocation()
@@ -19,15 +20,17 @@ function App() {
   
   return (
     <div className = "App">
-      <div className='AppContents'>
-        <Header/>
-        <Routes>
-          <Route path="/"   element={<Home/>}/>
-          <Route path='/About' element={<About/>}/>
-          <Route path= "/Contact" element={<Contact/>}/>
-        </Routes>
-        <Footer/>
-      </div> 
+      <IKContext urlEndpoint={urlEndpoint}>
+        <div className='AppContents'>
+          <Header/>
+          <Routes>
+            <Route path="/"   element={<Home/>}/>
+            <Route path='/About' element={<About/>}/>
+            <Route path= "/Contact" element={<Contact/>}/>
+          </Routes>
+          <Footer/>
+        </div> 
+      </IKContext>
     </div>
    
   );

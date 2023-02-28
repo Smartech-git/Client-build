@@ -3,8 +3,8 @@ import './Section2.css'
 import {ReactComponent as Call} from '../../../Icons/call.svg';
 import {ReactComponent as Slide1} from '../../../Assets/Section2ImageSlide1.svg'
 import {ReactComponent as Slide2} from '../../../Assets/Section2ImageSlide2.svg'
-import Section2Image from '../../../Assets/Section2Image.jpg'
 import { useInView, InView } from 'react-intersection-observer';
+import { IKImage } from 'imagekitio-react';
 
 export default function Section2() {
 
@@ -43,7 +43,7 @@ export default function Section2() {
         <InView triggerOnce={true} threshold={0.4}>
         {({ inView, ref}) => (
             <div ref={ref} className='Section2-Right'>
-                <img src={Section2Image} alt="Section2Image"/>
+                <IKImage path='Section2Image.jpg' alt="Section2Image"/>
                 <div className={`Slide1 ${inView ? 'Section2Slide1-animate' : ''}`}>
                     <Slide1 width='160' height="fit-content"/>
                 </div>

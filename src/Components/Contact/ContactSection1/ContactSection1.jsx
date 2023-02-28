@@ -5,6 +5,7 @@ import ContactPageImage from '../../../Assets/ContactPageImage.png'
 import {ReactComponent as Call} from '../../../Icons/call.svg'
 import {ReactComponent as Email} from '../../../Icons/email.svg'
 import { useInView } from 'react-intersection-observer';
+import { IKImage } from 'imagekitio-react';
 
 export default function ContactSection1() {
 
@@ -30,7 +31,7 @@ export default function ContactSection1() {
 
             <div className="ContactSection1-Right">
                 <div className='ContactPageImage'>
-                   <img src={ContactPageImage} alt="ContactPageImage" /> 
+                   <IKImage path='ContactPageImage.png' alt="ContactPageImage" fetchpriority="high" /> 
                 </div>
                 
                 <div className= {`ContactPage-GridSquare ${inView ? 'ContactPageGridSquare-animate' : ''}`}>

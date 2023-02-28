@@ -1,10 +1,9 @@
 import React from 'react'
 import './Section4.css'
-import Section4Image from '../../../Assets/Section4Image.jpg'
 import {ReactComponent as Section4Slide2} from '../../../Assets/Section4Slide2.svg'
 import {ReactComponent as GridSquare } from '../../../Assets/GridSquare.svg'
-import ProfilePic from '../../../Assets/ProfilePic.png'
 import { useInView, InView } from 'react-intersection-observer';
+import { IKImage } from 'imagekitio-react';
 
 export default function Section4() {
 
@@ -19,7 +18,7 @@ export default function Section4() {
       <InView triggerOnce={true} threshold={0.4}>
         {({ inView, ref}) => (
           <div ref={ref} className='Section4-Left'>
-            <img src ={Section4Image} alt="Section4Image" />
+            <IKImage path ='Section4Image.jpg' alt="Section4Image" />
             <div className={`Section4-Slide ${inView ? 'Section4Slide-Animate' : ''}`}>
                <Section4Slide2 width="250"  height="fit-content" /> 
             </div>
@@ -42,7 +41,7 @@ export default function Section4() {
           </p>
           <div className="Section4-Profile">
             <div className='Profile-Pic'>
-              <img src={ProfilePic} alt="ProfilePic" />
+              <IKImage path='ProfilePic.png' alt="ProfilePic" />
             </div>
             <div className='Profile-Details'>
               <h1>Okie Godson</h1>

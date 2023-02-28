@@ -13,7 +13,6 @@ export default function Header() {
   const [currentLocation, setCurrentLocation]  = useState('/')
 
   useEffect(()=> {
-    console.log(location)
     setCurrentLocation(location.pathname)
   }, [location])
 

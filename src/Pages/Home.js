@@ -1,12 +1,12 @@
 import React  from 'react'
 import './Home.css'
-import BackgroundImage1 from  '../Assets/BackgroundImage1.png'
-import HeroSectionImage from '../Assets/HeroSectionImage.jpg'
-import HeroSectionImage2 from '../Assets/HeroSectionImage2.jpg'
 import { Link} from "react-router-dom";
 import Section2 from '../Components/Home/Section2/Section2'
 import Section3 from '../Components/Home/Section3/Section3';
 import Section4 from '../Components/Home/Section4/Section4'
+import { IKImage } from 'imagekitio-react';
+
+const BackgroundImage1 = 'https://ik.imagekit.io/trams/ClientBuild/BackgroundImage1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677543155402'
 
 export default function Home() {
 
@@ -44,8 +44,8 @@ export default function Home() {
               <div></div>
             </div>
             <div className='Block-effect'></div>
-              <img className='HeroSection-SecondImage' src={HeroSectionImage2} alt ="HerSectionImage2" />
-             <img className='HeroSection-FirstImage' src={HeroSectionImage} alt="HeroSectionImage"/>
+              <IKImage className='HeroSection-SecondImage' path='HeroSectionImage2.jpg' alt ="HerSectionImage2" fetchpriority="high" />
+             <IKImage className='HeroSection-FirstImage' path='HeroSectionImage.png' alt="HeroSectionImage" fetchpriority="high"/>
           </div>
         </div>
         

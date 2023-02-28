@@ -1,12 +1,13 @@
 import React,  {useState} from 'react'
 import './Section3.css'
-import BackgroundImage2 from  '../../../Assets/BackgroundImage2.png'
 import {ReactComponent as Manufac} from '../../../Icons/Manufac-Logo.svg'
 import {ReactComponent as MechEng} from '../../../Icons/MechEng-Logo.svg'
 import {ReactComponent as Repairs} from '../../../Icons/Repairs-Logo.svg'
 import { useInView, InView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom'
 import {ReactComponent as ArrowDirect} from '../../../Icons/ArrowDirect.svg'
+
+const BackgroundImage2 = 'https://ik.imagekit.io/trams/ClientBuild/BackgroundImage2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677543155912'
 
 export default function Section3() {
     const [arrowState1, setArrowState1] = useState();

@@ -51,15 +51,15 @@
     margin-top: 0px;
 }
 .ContactPageImage {
-    height: 240px;
+    height: 200px;
     width: 250px;
     position: relative;
     z-index: 2;
     border: 1px solid #FAD100
 }
 .ContactPageImage > img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 200px;
 }
 
 .ContactPage-GridSquare{

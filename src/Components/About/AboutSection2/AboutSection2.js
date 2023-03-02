@@ -5,7 +5,7 @@ import {ReactComponent as MechEng} from '../../../Icons/MechEng-Logo.svg'
 import {ReactComponent as Repairs} from '../../../Icons/Repairs-Logo.svg'
 import { useInView } from 'react-intersection-observer';
 
-const BackgroundImage1 = 'https://ik.imagekit.io/trams/BackgroundImage1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677541556173'
+const BackgroundImage1 = 'https://ik.imagekit.io/trams/ClientBuild/BackgroundImage1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677543155402'
 
 export default function AboutSection2() {
 
